@@ -2,7 +2,7 @@ import { useEffect, useRef } from 'react';
 import { Code, Smartphone, Globe, Zap, Award, Users } from 'lucide-react';
 import { Card, CardContent } from '@/components/ui/card';
 // @ts-ignore
-import GitHubCalendar from 'react-github-calendar';
+import { GitHubCalendar } from 'react-github-calendar';
 
 const About = () => {
   const sectionRef = useRef<HTMLElement>(null);
