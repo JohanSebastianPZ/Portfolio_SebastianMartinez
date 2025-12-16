@@ -30,7 +30,7 @@ const Projects = () => {
 		}
 
 		return () => observer.disconnect();
-	}, []);
+	}, [activeFilter]);
 
 	const projects = [
 		{
