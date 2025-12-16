@@ -37,7 +37,7 @@ const Projects = () => {
 			id: 1,
 			title: "Activity Booking",
 			description: "Optimización de plugin de booking con módulos de impresión de facturas y captura de parámetros dinámicos durante el flujo de compra.",
-			image: "./Activity_booking.png",
+			image: "/Activity_booking.png",
 			technologies: ["PHP", "Javascript"],
 			category: "web",
 			github: "https://github.com/JohanSebastianPZ/Activity_Booking_Plugin.git",
