@@ -126,7 +126,7 @@ const About = () => {
           </div>
         </div>
 
-        {/* --- NUEVA SECCIÓN: GITHUB CALENDAR --- */}
+        {/* Github Calendar--- */}
         <div className="fade-in-up mb-20">
           <Card className="glass-effect border-border/20 overflow-hidden">
             <CardContent className="p-8">
@@ -134,14 +134,21 @@ const About = () => {
                 <h3 className="text-2xl font-bold mb-6 flex items-center gap-2">
                   <Code className="w-6 h-6 text-primary" /> Mi Actividad en GitHub
                 </h3>
-                <div className="w-full flex justify-center overflow-x-auto py-4">
+                <div className="w-full flex justify-center overflow-x-auto py-8">
                   <GitHubCalendar 
                     username="JohanSebastianPZ" 
                     colorScheme='dark'
-                    blockSize={12}
-                    blockMargin={4}
-                    fontSize={14}
-                  />
+                    // Aumentamos el tamaño de cada cuadrito (antes era 12)
+                    blockSize={16} 
+                    // Aumentamos un poco el margen entre cuadros (antes era 4)
+                    blockMargin={5}
+                    // Subimos el tamaño de la fuente de los textos (Meses y días)
+                    fontSize={16}
+                    // Opcional: añade un tema para que los verdes sean más vibrantes
+                    theme={{
+                        dark: ['#161b22', '#0ea5e9'], // Un azul brillante acorde a tu tema
+                    }}
+                    />
                 </div>
                 <p className="text-sm text-muted-foreground mt-4 italic">
                   Contribuciones realizadas en el último año
